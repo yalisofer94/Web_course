@@ -18,6 +18,11 @@ body {
     background: #171932;
 }
 
+header {
+    margin-top: 16px;
+    /* background-color: silver; */
+}
+
 
 /*<----------------------------LOGO!------------------------------------------>*/
 
