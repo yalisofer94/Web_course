@@ -7,12 +7,12 @@ var namelength = function() {
 }
 
 function initialized() {
-    var main = document.getElementsByTagName("main");
+    var main = document.getElementById("Thirdmain");
     var text = "";
     for (i = 0; i < namelength(); i++) {
         text += "<article></article>";
     }
-    main[0].innerHTML = text;
+    main.innerHTML = text;
     var tagis = document.getElementsByTagName('article');
     tagis[0].onmousemove = function() {
         tagis[0].style.backgroundImage = "url('./images/letterY.jpg')"
