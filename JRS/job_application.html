@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -17,31 +18,31 @@
             <div class="col-md-2 side-col"></div>
 
             <div class="col-md-1 headerLink" id="burger-menu">
-                <a href="#" alt="more">
+                <a href="#">
                     <div class="linkText">More</div>
                 </a>
             </div>
 
             <div class="col-md-1 headerLink" id="user-welcome">
-                <a href="#" alt="User">
+                <a href="#">
                     <div class="linkText">Sharon</div>
                 </a>
             </div>
 
             <div class="col-md-1 headerLink" id="messages">
-                <a href="#" alt="Messages">
+                <a href="#">
                     <div class="linkText">Messages</div>
                 </a>
             </div>
 
             <div class="col-md-1 headerLink" id="contacts">
-                <a href="#" alt="Contacts">
+                <a href="#">
                     <div class="linkText">Contacts</div>
                 </a>
             </div>
 
             <div class="col-md-1 headerLink" id="wanted">
-                <a href="#" alt="Wanted">
+                <a href="#">
                     <div class="linkText">Wanted</div>
                 </a>
             </div>
@@ -49,7 +50,7 @@
             <div class="col-md-1 side-col"> </div>
 
             <div class="col-md-2" id="logo">
-                <a href="main.html" alt="JRS"></a>
+                <a href="main.html"></a>
             </div>
 
             <div class="col-md-2 side-col"></div>
@@ -61,22 +62,22 @@
         <div class="col-md-2 side-col"></div>
         <div class="col-md-4 side-col"></div>
         <div class="col-md-1 navLink" id="my-board">
-            <a href="#" alt="My Board">
+            <a href="#">
                 <div class="linkText bottomText">My Board</div>
             </a>
         </div>
         <div class="col-md-1 navLink" id="notifications">
-            <a href="#" alt="Notifications">
+            <a href="#">
                 <div class="linkText bottomText">Notifications</div>
             </a>
         </div>
         <div class="col-md-1 navLink" id="statics">
-            <a href="#" alt="Statics">
+            <a href="#">
                 <div class="linkText bottomText">Statics</div>
             </a>
         </div>
         <div class="col-md-1 navLink navSelected" id="search">
-            <a href="#" alt="Search">
+            <a href="#">
                 <div class="linkText bottomText">Search</div>
             </a>
         </div>
@@ -99,7 +100,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-6 companyHeader">
                 <h1 class="companyName">Circle</h1>
-                <h2 class="companyRating">9.5</h1>
+                <h2 class="companyRating">9.5</h2>
             </div>
             <div class="col-md-1"></div>
             <div class="col-md-2 side-col"></div>
@@ -115,15 +116,15 @@
             <div class="col-md-2 side-col"></div>
         </div>
 
-        <form action="" method="GET" id="jobApplication">
+        <form action="job_details.html" method="GET" id="jobApplication">
             <div class="row formRow">
                 <div class="col-md-2 side-col"></div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6 border-bottom">
-                    <label>
+                    <label class="applyLabel">
                         Tell us about the biggest project you have done
                         <br>
-                        <textarea name="bigProject" rows="5" cols="50"> Free Text...</textarea>
+                        <textarea name="bigProject" rows="5" cols="50" placeholder="Free text..."></textarea>
                     </label>
                 </div>
                 <div class="col-md-1"></div>
@@ -134,14 +135,16 @@
                 <div class="col-md-2 side-col"></div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6 border-bottom">
-                    <label class="checkboxContainer">
+                    <section class="checkboxContainer">
                         Do you know any extra languages?
                         <br>
-                        <br><input name="langs[]" type="checkbox" class="checkboxes" value="html"><text>HTML</text>
-                        <br><input name="langs[]" type="checkbox" class="checkboxes" value="java script"><text>JS</text>
-                        <br><input name="langs[]" type="checkbox" class="checkboxes" value="css"><text>CSS</text>
-                        <br><input name="langs[]" type="checkbox" class="checkboxes" value="python"><text>Python</text>
-                    </label>
+                        <br><input name="langs[]" type="checkbox" class="checkboxes" value="html"><label>HTML</label>
+                        <br><input name="langs[]" type="checkbox" class="checkboxes"
+                            value="java script"><label>JS</label>
+                        <br><input name="langs[]" type="checkbox" class="checkboxes" value="css"><label>CSS</label>
+                        <br><input name="langs[]" type="checkbox" class="checkboxes"
+                            value="python"><label>Python</label>
+                    </section>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-2 side-col"></div>
@@ -151,14 +154,17 @@
                 <div class="col-md-2 side-col"></div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6 border-bottom">
-                    <label class="checkboxContainer">
+                    <section class="checkboxContainer">
                         Which IDEs are you familiar with ?
                         <br>
-                        <br><input name="ides[]" type="checkbox" class="checkboxes" value="vs"><text>Visual Studio</text>
-                        <br><input name="ides[]" type="checkbox" class="checkboxes" value="vscode"><text>VS Code</text>
-                        <br><input name="ides[]" type="checkbox" class="checkboxes" value="notepad++"><text>NotePad++</text>
-                        <br><input name="ides[]" type="checkbox" class="checkboxes" value="atom"><text>Atom</text>
-                    </label>
+                        <br><input name="ides[]" type="checkbox" class="checkboxes" value="vs"><label>Visual
+                            Studio</label>
+                        <br><input name="ides[]" type="checkbox" class="checkboxes" value="vscode"><label>VS
+                            Code</label>
+                        <br><input name="ides[]" type="checkbox" class="checkboxes"
+                            value="notepad++"><label>NotePad++</label>
+                        <br><input name="ides[]" type="checkbox" class="checkboxes" value="atom"><label>Atom</label>
+                    </section>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-2 side-col"></div>
@@ -168,23 +174,25 @@
                 <div class="col-md-2 side-col"></div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6 border-bottom">
-                    <label>
+                    <label class="applyLabel">
                         Give us one of your strength points and one of your weakness points
                         <br><br>
                         Strength Point... <input type="text" name="strength" class="textBoxes">
-                        <br><br> 
-                        Weakness Point... <input type="text" name="weakness" class="textBoxes"> 
+                    </label>
+                    <label class="applyLabel">
+                        Weakness Point... <input type="text" name="weakness" class="textBoxes">
                     </label>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-2 side-col"></div>
             </div>
-            
+
             <div class="row formRow">
                 <div class="col-md-2 side-col"></div>
                 <div class="col-md-1"></div>
                 <div class="col-md-6 border-bottom submitApplication">
-                    <p>We recommend you to fill all of the fields since they are extra point and not minimum requirements</p>
+                    <p>We recommend you to fill all of the fields since they are extra point and not minimum
+                        requirements</p>
                     <input class="applyBtn" type="submit" value="Submit">
                 </div>
                 <div class="col-md-1"></div>
